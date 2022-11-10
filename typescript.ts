@@ -1,41 +1,41 @@
-console.log('hello typescript')
+// // console.log('hello typescript')
 
-//js let num = 23 
-//differences 
-let firstName: string = "Corwin"
-let age: number = 26
-let good: boolean = true
+// //js let num = 23 
+// //differences 
+// let firstName: string = "Corwin"
+// let age: number = 26
+// let good: boolean = true
 
-let num: number = 23 // typescript //label your values 
+// let num: number = 23 // typescript //label your values 
 
-let fruit: string = 'bananas';
+// let fruit: string = 'bananas';
 
-let array: string[] = [
-    'apples',
-    ' grapes',
-    ' mandarins',
-]
+// let array: string[] = [
+//     'apples',
+//     ' grapes',
+//     ' mandarins',
+// ]
 
-enum taxForm {        //type annotation
-   standard = "1040",
-   childCredit = "1065",
-   sCorp= "1121m",
-    Sales = "1099"
-}
+// enum taxForm {        //type annotation
+//    standard = "1040",
+//    childCredit = "1065",
+//    sCorp= "1121m",
+//     Sales = "1099"
+// }
 
-console.log(`
-you need form ${taxForm.childCredit}
-as well as ${taxForm.Sales}
-`)
+// // console.log(`
+// you need form ${taxForm.childCredit}
+// as well as ${taxForm.Sales}
+// `)
 
-console.log(`
-   First Name: ${firstName} 
-   Your age: ${age}
-   you have many ${array}
+// // console.log(`
+//    First Name: ${firstName} 
+//    Your age: ${age}
+//    you have many ${array}
 `)
 
 let code: string | number = 11 + ' hello will this be valid code'
-console.log(
+// console.log(
 code 
 )
 
@@ -58,6 +58,24 @@ debug('OMG no return')
 
 let chosenFruit: string = getFruit(1)
 
-console.log(`you choose an ${getFruit(0)}`)
+// console.log(`//you choose an ${getFruit(0)}`)
 
 // any = any type of value in typescript 
+
+
+
+interface teacher {
+    name: string,
+    heighth:number,
+    subject:string[],
+    age: number
+}
+
+let damian : teacher = {
+    name: 'damian',
+    heighth: 0,
+    subject: ['english', 'sex-ed', 'tech'],
+    age: 66
+}
+
+console.log(damian)
